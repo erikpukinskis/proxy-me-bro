@@ -5,9 +5,7 @@
 ## Installation
 
 ```
-brew install node
-brew install ruby
-brew install ruby-build
+brew install node ruby ruby-build
 rbenv install 2.6.0
 echo "2.6.0" > ~/.rbenv/version
 bundler install
