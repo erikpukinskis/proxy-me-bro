@@ -46,3 +46,12 @@ gem "foreman", "~> 0.64.0"
 gem "sqlite3", "~> 1.4"
 
 gem "responders", "~> 2.4"
+
+gem "selenium-webdriver", "~> 3.142"
+
+
+gem "capybara", "~> 3.18"
+
+gem "chromedriver-helper", "~> 2.1"
+
+gem "pry-rails", "~> 0.3.9", :group => :development

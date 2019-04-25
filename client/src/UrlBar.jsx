@@ -4,7 +4,7 @@ import axios from 'axios';
 class UrlBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: "https://www.amazon.com"};
+    this.state = {value: "http://news.ycombinator.com"};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,21 +19,20 @@ class UrlBar extends Component {
     const url = this.state.value;
      axios.get("/urls/"+url)
       .then(response => {
-        document.getElementById("simple-page").innerHTML = response.data
+          this.loadModule("ycombinator.com/HackerNewsIndex")
       })
       .catch(error => alert(error))
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form id="url-bar" onSubmit={this.handleSubmit}>
         <label>
           <input
             type="text"
             value={this.state.value}
             onChange={this.handleChange} />
         </label>
-        <div id="simple-page" />
       </form>
     );
   }

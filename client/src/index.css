@@ -22,3 +22,21 @@ button {
 	border: none;
 	font-size: 1em;
 }
+
+#url-bar {
+	margin-top: 150px;
+}
+
+.link-row {
+	margin-bottom: 0.6em;
+}
+
+a {
+	padding: 0.6em 0;
+	margin: -0.4em 0;
+	display: inline-block;
+}
+
+.dim {
+	color: #c5c;
+}
